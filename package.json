@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "pug dev/pages -P --out ./docs",
+    "prod": "pug dev/pages --out ./docs"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="h-100"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>EXAMPLE.COM | User profile</title>
+    <link
+      rel="stylesheet"
+      href="./styles/custom.css"
+    />
+  </head>
+
+  <body class="h-100 d-flex flex-column bg-dark text-white">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-info rounded-5 pt-0 pt-lg-4 pb-0 position-relative"
+    >
+      <div
+        class="bg-primary w-100 rounded-bottom-4 px-4 px-lg-0 py-1 nav-group"
+      >
+        <div
+          class="container container-fluid d-flex align-items-center flex-wrap"
+        >
+          <a
+            class="navbar-brand"
+            href="#"
+            >EXAMPLE.COM</a
+          >
+
+          <button
+            class="navbar-toggler ms-auto border-0 px-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end py-1"
+            id="navbarNav"
+          >
+            <form class="d-flex form-inline my-2 mx-5 my-lg-0">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <!-- <button
+                class="btn btn-outline-success"
+                type="submit"
+              >
+                Search
+              </button> -->
+            </form>
+            <ul class="navbar-nav row-gap-1 column-gap-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-decoration-underline font-bold"
+                  href="#"
+                  >Register</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-decoration-underline font-bold"
+                  href="#"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="collapse navbar-collapse bg-info px-4 px-lg-0 top-0 rounded-5"
+        id="navbarNav"
+      >
+        <ul
+          class="container pt-lg-4 mt-1 px-2 px-lg-1 navbar-nav row-gap-1 column-gap-3 pt-2"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              >Conferences</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              >Search in reports</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              >Rules</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              >FAQ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              >Who's online</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              >Users</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container mt-3 mt-lg-5">
+      <div class="row">
+        <h2 class="h4 d-block d-lg-none mb-3 ms-2 font-semibold">My Profile</h2>
+        <div
+          class="col-md d-flex flex-row flex-lg-column column-gap-5 align-items-center justify-content-between justify-content-lg-start pb-4 pb-lg-0"
+        >
+          <div class="ps-2 ps-lg-0">
+            <div class="position-relative">
+              <img
+                src="./assets/images/avatar.jpg"
+                alt="avatar"
+                class="rounded-circle avatar"
+                width="150px"
+                height="150px"
+              />
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center bg-primary rounded-5 user-edit"
+              >
+                <img
+                  src="./assets/icons/iconamoon_edit-fill.svg"
+                  width="18px"
+                />
+              </a>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center column-gap-1 text-success font-semibold"
+            >
+              <img
+                src="./assets/icons/Ellipse 12.svg"
+                width="10px"
+              />
+              <p class="m-0">Online</p>
+            </div>
+          </div>
+          <ul class="list-unstyled font-semibold pe-3 pe-lg-0">
+            <li>
+              <a
+                href="#"
+                class="text-decoration-none text-white"
+                >Feed</a
+              >
+            </li>
+            <img src="./assets/icons/Vector 1.svg" />
+            <li>
+              <a
+                href="#"
+                class="text-decoration-none text-white"
+                >Gallery</a
+              >
+            </li>
+            <img src="./assets/icons/Vector 1.svg" />
+            <li>
+              <a
+                href="#"
+                class="text-decoration-none text-white"
+                >Messages</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-10 d-flex flex-column row-gap-3 mb-5">
+          <h2 class="h4 d-none d-lg-block m-0 font-semibold">My Profile</h2>
+          <div class="w-100 rounded bg-light px-md-5 px-3 py-3 font-semibold">
+            <h2 class="h5 font-semibold mb-3">Ratings</h2>
+            <div
+              class="d-flex column-gap-3 row-gap-3 flex-wrap"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div
+                class="d-flex flex-column row-gap-1 align-items-center justify-content-center"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Common Rating"
+                role="button"
+              >
+                <div class="rounded-circle bg-warning p-2">
+                  <img src="./assets/icons/mingcute_star-fill.svg" />
+                </div>
+                <p class="m-0">10</p>
+              </div>
+              <div
+                class="d-flex flex-column row-gap-1 align-items-center justify-content-center"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Common Rating"
+                role="button"
+              >
+                <div class="rounded-circle bg-warning p-2">
+                  <img src="./assets/icons/fluent_people-20-filled.svg" />
+                </div>
+                <p class="m-0">10</p>
+              </div>
+              <div
+                class="d-flex flex-column row-gap-1 align-items-center justify-content-center"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Common Rating"
+                role="button"
+              >
+                <div class="rounded-circle bg-warning p-2">
+                  <img src="./assets/icons/mingcute_star-fill.svg" />
+                </div>
+                <p class="m-0">10</p>
+              </div>
+              <div
+                class="d-flex flex-column row-gap-1 align-items-center justify-content-center"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Common Rating"
+                role="button"
+              >
+                <div class="rounded-circle bg-warning p-2">
+                  <img src="./assets/icons/fluent_people-20-filled.svg" />
+                </div>
+                <p class="m-0">10</p>
+              </div>
+              <div
+                class="d-flex flex-column row-gap-1 align-items-center justify-content-center"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Common Rating"
+                role="button"
+              >
+                <div class="rounded-circle bg-warning p-2">
+                  <img src="./assets/icons/mingcute_star-fill.svg" />
+                </div>
+                <p class="m-0">10</p>
+              </div>
+              <div
+                class="d-flex flex-column row-gap-1 align-items-center justify-content-center"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Common Rating"
+                role="button"
+              >
+                <div class="rounded-circle bg-warning p-2">
+                  <img src="./assets/icons/fluent_people-20-filled.svg" />
+                </div>
+                <p class="m-0">10</p>
+              </div>
+              <div
+                class="d-flex flex-column row-gap-1 align-items-center justify-content-center"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Common Rating"
+                role="button"
+              >
+                <div class="rounded-circle bg-warning p-2">
+                  <img src="./assets/icons/mingcute_star-fill.svg" />
+                </div>
+                <p class="m-0">10</p>
+              </div>
+              <div
+                class="d-flex flex-column row-gap-1 align-items-center justify-content-center"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Common Rating"
+                role="button"
+              >
+                <div class="rounded-circle bg-warning p-2">
+                  <img src="./assets/icons/fluent_people-20-filled.svg" />
+                </div>
+                <p class="m-0">10</p>
+              </div>
+              <div
+                class="d-flex flex-column row-gap-1 align-items-center justify-content-center"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Common Rating"
+                role="button"
+              >
+                <div class="rounded-circle bg-warning p-2">
+                  <img src="./assets/icons/mingcute_star-fill.svg" />
+                </div>
+                <p class="m-0">10</p>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div
+                  class="modal-content bg-light px-md-5 px-3 py-3 w-auto font-semibold container-fluid"
+                >
+                  <h2 class="h5 font-semibold mb-3">Ratings</h2>
+                  <div class="modal-body d-flex flex-wrap column-gap-5 px-0">
+                    <div class="d-flex flex-column row-gap-3 px-0 pb-3">
+                      <ul class="list-group list-unstyled row-gap-3">
+                        <li
+                          class="d-flex column-gap-3 align-items-center opacity-25"
+                        >
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li
+                          class="d-flex column-gap-3 align-items-center opacity-25"
+                        >
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex flex-column row-gap-3 px-0 pb-3">
+                      <ul class="list-group list-unstyled row-gap-3">
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                        <li class="d-flex column-gap-3 align-items-center">
+                          <div class="rounded-circle bg-warning p-2">
+                            <img src="./assets/icons/mingcute_star-fill.svg" />
+                          </div>
+                          <p
+                            class="m-0 px-2 py-1 bg-dark bg-opacity-50 rounded"
+                          >
+                            Common Rating
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 rounded bg-light px-md-5 px-3 py-3 font-semibold">
+            <div class="d-flex justify-content-between">
+              <h2 class="h5 font-semibold mb-3">Main</h2>
+              <a
+                href="#"
+                class="text-warning font-semibold"
+                >Edit</a
+              >
+            </div>
+            <ul class="list-group list-unstyled row-gap-2 mb-2">
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Messages</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">
+                  FORUM.EXAMPLE.INC
+                </p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Email (visible only to you)</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">
+                  example@email.com
+                </p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Password</p>
+                <a href="#">Edit</a>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Gender</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">Female</p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Age</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">22</p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Time Zone</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">
+                  New York (USA)
+                </p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Country</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">USA</p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">City</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">
+                  New York
+                </p>
+              </li>
+            </ul>
+            <div class="d-flex flex-column row-gap-2 px-4">
+              <p class="text-secondary m-0">Languages:</p>
+              <p class="d-flex column-gap-3 flex-wrap">
+                <span
+                  class="badge rounded-pill bg-primary fs-6 fw-normal font-semibold"
+                  >English</span
+                >
+                <span
+                  class="badge rounded-pill bg-primary fs-6 fw-normal font-semibold"
+                  >Finnish</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="w-100 rounded bg-light px-md-5 px-3 py-3 font-semibold">
+            <div class="d-flex justify-content-between">
+              <h2 class="h5 font-semibold mb-3">Hobbies</h2>
+              <a
+                href="#"
+                class="text-warning font-semibold"
+                >Edit</a
+              >
+            </div>
+            <ul class="list-group list-unstyled row-gap-2 mb-2">
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Profession</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">Model</p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Hobby</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">
+                  Ullamco duis aliqua ad culpa magna
+                </p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Interests</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">
+                  Excepteur elit aliqua laborum pariatur sint incididunt
+                </p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Leisure and Travel</p>
+                <p class="col-sm-8 col-sm-8 col-md-5 text-end m-0 text-white">
+                  Ullamco laboris quis est irure ut aute cillum cillum quis
+                  Lorem amet
+                </p>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between rounded bg-dark border-0 text-secondary"
+              >
+                <p class="m-0">Preferences</p>
+                <p class="col-sm-8 col-md-5 text-end m-0 text-white">
+                  Qui aliquip id ea ad velit veniam ullamco
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="w-100 rounded bg-light px-md-5 px-3 py-3 font-semibold">
+            <div class="d-flex justify-content-between">
+              <h2 class="h5 font-semibold mb-3">About Me</h2>
+              <a
+                href="#"
+                class="text-warning font-semibold"
+                >Edit</a
+              >
+            </div>
+
+            <div class="me-sm-0 me-md-5 mt-3">
+              <p>
+                Name
+                <a
+                  href="tel:#"
+                  class="text-white text-decoration-none"
+                  >+99999999999</a
+                ><br />
+                Aliquip in voluptate enim pariatur adipisicing.
+                <br /><a
+                  href="#"
+                  class="text-white text-decoration-none"
+                  >my TG channel</a
+                >
+              </p>
+              <p>
+                Dolore labore est dolor ex excepteur consequat exercitation
+                laborum adipisicing magna ullamco cillum deserunt. Laboris
+                excepteur est minim enim. Amet consectetur reprehenderit aliqua
+                mollit. Occaecat et enim irure sunt cupidatat veniam irure ad
+                minim. Minim officia et esse proident cupidatat aute excepteur
+                minim cillum cillum culpa do incididunt velit. Exercitation
+                occaecat adipisicing nulla commodo ullamco nisi nisi elit
+                pariatur laborum do quis consectetur. Consectetur labore
+                deserunt aliquip ex pariatur aliqua non elit in amet nisi sunt
+                consequat Lorem.
+              </p>
+              <p>
+                Amet labore consectetur esse eu. Magna laboris nostrud ex anim
+                sint deserunt nostrud ipsum officia sit qui cupidatat. Ad cillum
+                eu elit irure ullamco mollit. Duis Lorem nulla Lorem do
+                consequat eiusmod enim irure sint est pariatur cupidatat ut
+                fugiat. Adipisicing pariatur dolor cupidatat cillum ex nisi
+                proident mollit.
+              </p>
+              <p>
+                Aliquip velit sunt laboris amet dolore culpa ipsum anim cillum
+                non sint aliquip dolor. Et commodo exercitation eu irure aliqua
+                veniam eu eiusmod consequat qui. Excepteur dolore ipsum eiusmod
+                consectetur adipisicing magna in duis pariatur laborum qui sunt.
+              </p>
+              <p>
+                Eu esse do ad mollit sit. Nostrud eu duis do aliqua excepteur
+                exercitation et in cupidatat est sunt duis consequat. Consequat
+                sint nulla pariatur elit amet ea ullamco excepteur culpa aute
+                occaecat. Aliqua do Lorem enim ullamco in consequat veniam. Amet
+                non laborum velit enim sit.
+              </p>
+              <p>
+                Ea cillum ut veniam est adipisicing labore ut cupidatat laborum
+                minim labore non labore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3 border-top">
+      <div
+        class="container d-flex justify-content-md-between justify-content-center align-items-center flex-wrap gap-2"
+      >
+        <a
+          href="#"
+          class="text-uppercase text-decoration-none text-secondary text-center"
+          >Technical support at example.com</a
+        >
+        <a
+          href="#"
+          class="text-uppercase text-decoration-none text-secondary text-center"
+          >How to advertise on example.com</a
+        >
+      </div>
+    </footer>
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
