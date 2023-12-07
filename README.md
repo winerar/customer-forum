@@ -12,6 +12,7 @@ The customer provided:
 
 - HTML
 - CSS
+- SASS
 - Bootstrap
 
 ## Result
