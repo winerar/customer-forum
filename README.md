@@ -20,5 +20,5 @@ The customer provided:
 What I've done:
 
 - integrated and configured Bootstrap
-- coded the pages
+- coded index, forum, profile and faq pages
 - created CSS styles for some elements.
