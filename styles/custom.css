@@ -114,6 +114,9 @@
     font-size: 0.75rem;
     line-height: 141%;
   }
+  .card-header-title {
+    font-size: 5rem;
+  }
 }
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)

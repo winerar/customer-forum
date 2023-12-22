@@ -1,11 +1,4 @@
-$font-size-15: 15px;
-$font-size-16: 16px;
-$font-size-18: 18px;
-$font-size-20: 20px;
-$font-size-22: 22px;
-$font-size-24: 24px;
-$font-size-26: 26px;
-
+@charset "UTF-8";
 .font-semibold {
   font-family: GilroySemibold;
 }
@@ -20,7 +13,7 @@ $font-size-26: 26px;
 
 .nav-group {
   position: absolute;
-  top:0;
+  top: 0;
 }
 
 .form-inline .form-control {
@@ -37,9 +30,7 @@ $font-size-26: 26px;
 }
 
 .nav-item .nav-link {
-  // font-family: GilroyBold;
   color: #F7F8FC;
-  // text-decoration-line: underline; 
 }
 
 .card-header {
@@ -52,7 +43,7 @@ $font-size-26: 26px;
   bottom: auto;
   text-transform: uppercase;
   font-size: 5.8125rem;
-  opacity: 0.1; 
+  opacity: 0.1;
   line-height: normal;
 }
 
@@ -73,24 +64,25 @@ $font-size-26: 26px;
 .avatar {
   max-width: 9.375rem;
   max-height: 9.375rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   aspect-ratio: 1;
 }
 
 .user-status {
   position: absolute;
-  top: 85px; 
+  top: 85px;
   left: 15px;
   width: 10px;
-  height: 10px;          
+  height: 10px;
 }
 
 .user-edit {
   position: absolute;
-  top: 120px; 
+  top: 120px;
   left: 120px;
   width: 30px;
-  height: 30px; 
+  height: 30px;
 }
 
 .page-link {
@@ -102,13 +94,11 @@ $font-size-26: 26px;
   .nav-group {
     position: initial;
   }
-
   footer {
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 141%;
   }
-
   .card-header-title {
     font-size: 5rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */
