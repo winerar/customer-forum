@@ -22,3 +22,11 @@ What I've done:
 - integrated and configured Bootstrap
 - coded index, forum, profile and faq pages
 - created CSS styles for some elements.
+
+![index.html](image.png)
+
+![forum.html](forum.png)
+
+![profile.html](profile.png)
+
+![faq.html](faq.png)
